@@ -1,0 +1,19 @@
+<input
+  placeholder="Search..."
+  type="text"
+  class="form-control"
+  style="margin: 2px;"
+  (input)="onSearch()"
+  [(ngModel)]="searchInput">
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="list-group-item clearfix" *ngFor="let user of usersSearch">
+        <div class="pull-left">
+          <p>{{ user.eyecolor }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
