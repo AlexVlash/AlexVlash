@@ -28,7 +28,7 @@ export const appRoutes: Routes = [
     AppComponent,
     FirstnameComponent,
     LastnameComponent,
-    EyecolorComponent
+    EyecolorComponent,
   ],
   imports: [
     BrowserModule,
