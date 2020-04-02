@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import { User } from "../shared/users.model";
 
 @Component({
   selector: "app-eyecolor",

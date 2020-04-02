@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../shared/users.model'
-import { of } from 'rxjs';
 
 @Component({
   selector: 'app-lastname',
