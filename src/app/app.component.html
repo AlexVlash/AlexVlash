@@ -1,21 +1,5 @@
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Sex Offenders</a>
-      <div *ngIf="!allowAccess" class="form-inline pull-right" style="margin-top: 6px;">
-        <input type="search" class="form-control mr-sm-2" [(ngModel)]="userInput" placeholder="Radu">
-        <button type="submit" class="btn btn-outline-success my-2 my-sm-0" (click)="sendValues()">Log In</button>
-      </div>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a *ngIf="allowAccess" routerLink="/firstname">First</a></li>
-      <li><a *ngIf="allowAccess" routerLink="/lastname">Last</a></li>
-      <li><a *ngIf="allowAccess" routerLink="/eyecolor">Eyecolor</a></li>
-    </ul>
-
-  </div>
-</nav>
-<br>
-
+<app-header></app-header>
 <router-outlet></router-outlet>
+<app-footer></app-footer>
+
+

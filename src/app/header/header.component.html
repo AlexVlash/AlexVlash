@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Sex Offenders</a>
+  <div
+    *ngIf="!allowAccess"
+    class="form-inline">
+    <input type="search"
+      class="form-control mr-sm-2 bg-dark text-white"
+      [(ngModel)]="userInput"
+      placeholder="Radu">
+    <button type="submit"
+      class="btn btn-outline-success my-2 my-sm-0"
+      (click)="sendValues()">Log In</button>
+  </div>
+  <div class="navbar-nav">
+    <a *ngIf="allowAccess"
+      routerLink="/firstname"
+      class="nav-item nav-link">First Name</a>
+    <a *ngIf="allowAccess"
+      routerLink="/lastname"
+      class="nav-item nav-link">Last Name</a>
+    <a *ngIf="allowAccess"
+      routerLink="/eyecolor"
+      class="nav-item nav-link">Eyecolor</a>
+  </div>
+</nav>

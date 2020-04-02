@@ -7,6 +7,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { FirstnameComponent } from './firstname/firstname.component';
 import { LastnameComponent } from './lastname/lastname.component';
 import { EyecolorComponent } from './eyecolor/eyecolor.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 export const appRoutes: Routes = [
   {
@@ -29,6 +31,8 @@ export const appRoutes: Routes = [
     FirstnameComponent,
     LastnameComponent,
     EyecolorComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

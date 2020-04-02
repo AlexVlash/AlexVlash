@@ -6,18 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "Eyefinder";
-  userName = "radu";
-  allowAccess = false;
-  userInput = '';
 
-  sendValues() {
-    if(this.userInput.toLowerCase() === this.userName) {
-      this.allow()
-    }
-  }
-
-  allow() {
-    return this.allowAccess = true;
-  }
 }
