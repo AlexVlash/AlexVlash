@@ -9,6 +9,7 @@ import { LastnameComponent } from './lastname/lastname.component';
 import { EyecolorComponent } from './eyecolor/eyecolor.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 export const appRoutes: Routes = [
   {
@@ -22,6 +23,10 @@ export const appRoutes: Routes = [
   {
     path: 'eyecolor',
     component: EyecolorComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   }
 ];
 
@@ -33,6 +38,7 @@ export const appRoutes: Routes = [
     EyecolorComponent,
     FooterComponent,
     HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
