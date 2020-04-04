@@ -27,6 +27,11 @@ export const appRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
@@ -38,7 +43,6 @@ export const appRoutes: Routes = [
     EyecolorComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
