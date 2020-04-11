@@ -1,4 +1,6 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { User } from '../users.model'
+import { FirstnameComponent } from '../firstname/firstname.component';
 
 @Component({
   selector: "app-eyecolor",
@@ -7,46 +9,7 @@ import { Component, OnInit} from '@angular/core';
 })
 export class EyecolorComponent implements OnInit {
 
-  users = [{
-    first: "Alex",
-    last: "Vlash",
-    eyecolor: "blue"
-  },
-  {
-    first: "John",
-    last: "Doe",
-    eyecolor: "green"
-  },
-  {
-    first: "Andy",
-    last: "Gomez",
-    eyecolor: "green"
-  },
-  {
-    first: "Nicu",
-    last: "Ploaie",
-    eyecolor: "brown"
-  },
-  {
-    first: "Linda",
-    last: "Cunning",
-    eyecolor: "brown"
-  },
-  {
-    first: "Gus",
-    last: "Fring",
-    eyecolor: "blue"
-  },
-  {
-    first: "Josh",
-    last: "Norring",
-    eyecolor: "green"
-  },
-  {
-    first: "Ruben",
-    last: "Growings",
-    eyecolor: "brown"
-  }]
+  users: User[];
 
   usersSearch;
   searchInput: string;
